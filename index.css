@@ -155,17 +155,17 @@ body {
 }
 
 #about:hover {
-    background: #1f8eff;
+    background: rgba(0, 0, 0, .4);
     cursor: pointer;
 }
 
 #work:hover {
-    background: #1f8eff;
+    background: rgba(0, 0, 0, .4);
     cursor: pointer;
 }
 
 #contact:hover {
-    background: #1f8eff;
+    background: rgba(0, 0, 0, .4);
     cursor: pointer;
 }
 
@@ -180,7 +180,7 @@ body {
 
 .social {
     color: #fff;
-    font-size: 22px;
+    font-size: 25px;
     border-radius: 50%;
     transition: 0.4s ease-in-out;
     margin: 0px 8px;
@@ -351,7 +351,8 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5%;
     z-index: 1;
     transition: 0.4s ease-in-out;
 }
@@ -374,10 +375,17 @@ body {
     width: 45%;
     padding-top: 13%;
     background-position: 50% 50%;
-    background-size: cover;
+    background-size: auto 100%;
 }
 
-.avatar:hover, .banner:hover {
+.wallpaper {
+    width: 30%;
+    padding-top: 42%;
+    background-position: 50% 50%;
+    background-size: auto 100%;
+}
+
+.avatar:hover, .banner:hover, .wallpaper:hover {
     transform: scale(1.03);
     cursor: zoom-in;
 }
@@ -391,6 +399,10 @@ hr {
     transition-property: visibility;
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
+}
+
+#nameLanding {
+    text-decoration: underline;
 }
 
 #magnifyOverlay {
@@ -443,3 +455,4 @@ hr {
         opacity: 1;
     }
 }
+

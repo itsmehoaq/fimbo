@@ -5,18 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Neyako.</title>
-    <script type="text/javascript" nonce="2417ecb2d370494f87b6579b723" src="//local.adguard.org?ts=1642051678407&amp;type=content-script&amp;dmn=cdn.discordapp.com&amp;app=chrome.exe&amp;css=1&amp;js=1&amp;gcss=1&amp;rel=1&amp;rji=1&amp;sbe=0"></script>
-<script type="text/javascript" nonce="2417ecb2d370494f87b6579b723" src="//local.adguard.org?ts=1642051678407&amp;name=AdGuard%20Popup%20Blocker&amp;name=AdGuard%20Extra&amp;type=user-script"></script><script type="text/javascript" nonce="2417ecb2d370494f87b6579b723"
-            src="//local.adguard.org?ts=1642051678407&amp;type=content-script&amp;dmn=cdn.discordapp.com&amp;app=chrome.exe&amp;css=1&amp;js=1&amp;gcss=1&amp;rel=1&amp;rji=1&amp;sbe=0"></script>
-    <script type="text/javascript" nonce="2417ecb2d370494f87b6579b723"
-            src="//local.adguard.org?ts=1642051678407&amp;name=AdGuard%20Popup%20Blocker&amp;name=AdGuard%20Extra&amp;type=user-script"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <style id="main-page-visibility-toggle"></style>
 </head>
 <body>
@@ -35,14 +30,14 @@
 <a id="about" onclick="showabout()" class="animated fadeIn main-page-content" style="animation-delay:2.2s;">pricing</a>
 <a id="work" onclick="showwork()" class="animated fadeIn main-page-content" style="animation-delay:2.2s;">showcase</a>
 <a id="contact" onclick="showcontact()" class="animated fadeIn main-page-content"
-   style="animation-delay:2.2s;">terms of service</a>
+   style="animation-delay:2.2s;">terms of <br> service</a>
 <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
-    <h1 class="main-page-content">neyako</h1>
+    <h1 class="main-page-content" id="nameLanding">neyako</h1>
     <h2 class="main-page-content">graphic designer / human / hololive enjoyer</h2>
     <div id="menu">
-        <a onclick="showabout()">pricing</a>
-        <a onclick="showwork()">showcase</a>
-        <a onclick="showcontact()">terms of service</a>
+        <a onclick="showabout()" class="main-page-content">pricing</a>
+        <a onclick="showwork()" class="main-page-content">showcase</a>
+        <a onclick="showcontact()" class="main-page-content">tos</a>
     </div>
     <table>
         <tr>
@@ -55,7 +50,6 @@
             <td class="animated zoomIn main-page-content" style="animation-delay:2.6s;"><a class="social"
                                                                                            href="https://neji.works/discord"><i
                     class="fab fa-discord"></i></a></td>
-            <!--<td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>-->
         </tr>
     </table>
 </div>
@@ -65,95 +59,168 @@
     <section>
         <h2>avatar</h2>
         <div id="photos">
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/ava/1.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/ava/2.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/ava/3.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/ava/4.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/ava/5.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/ava/6.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/ava/7.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/ava/8.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/ava/9.png') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/ava/1.png') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/ava/2.png') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/ava/3.png') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/ava/4.png') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/ava/5.png') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/ava/6.png') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/ava/7.png') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/ava/8.png') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/ava/9.png') center center / 100% auto no-repeat;"></div>
         </div>
         <hr/>
         <h2>banners</h2>
         <div id="photos">
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/1.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/2.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/3.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/4.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/5.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/6.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/7.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/8.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/9.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/10.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/11.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/12.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/13.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/14.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/15.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/16.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/17.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/18.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/19.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/20.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/21.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/22.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/23.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/24.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/25.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/26.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/27.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/28.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/29.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/banner/30.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/1.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/2.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/3.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/4.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/5.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/6.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/7.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/8.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/9.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/10.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/11.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/12.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/13.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/14.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/15.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/16.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/17.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/18.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/19.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/20.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/21.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/22.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/23.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/24.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/25.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/26.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/27.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/28.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/29.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/banner/30.png') center center / 100% auto no-repeat;"></div>
         </div>
         <hr/>
         <h2>stream overlay</h2>
         <div id="photos">
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/stream/1.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/stream/2.jpg') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/stream/3.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/stream/4.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/stream/5.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/stream/6.jpg') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/stream/7.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/stream/8.jpg') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/stream/1.png') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/stream/2.jpg') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/stream/3.png') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/stream/4.png') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/stream/5.png') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/stream/6.jpg') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/stream/7.png') center center / 100% auto no-repeat;"></div>
+            <div class="avatar" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/stream/8.jpg') center center / 100% auto no-repeat;"></div>
         </div>
         <hr/>
         <h2>phone wallpaper</h2>
         <div id="photos">
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/wallpaper/1.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/wallpaper/2.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/wallpaper/3.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/wallpaper/4.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/wallpaper/5.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/wallpaper/6.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/wallpaper/7.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/wallpaper/8.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/wallpaper/9.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/wallpaper/10.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/wallpaper/11.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/wallpaper/12.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/wallpaper/13.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/wallpaper/14.png') center center / 100% auto no-repeat;"></div>
-            <div class="avatar" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/wallpaper/15.jpg') center center / 100% auto no-repeat;"></div>
+            <div class="wallpaper" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/wallpaper/1.png') center center / 100% auto no-repeat;"></div>
+            <div class="wallpaper" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/wallpaper/2.png') center center / 100% auto no-repeat;"></div>
+            <div class="wallpaper" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/wallpaper/3.png') center center / 100% auto no-repeat;"></div>
+            <div class="wallpaper" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/wallpaper/4.png') center center / 100% auto no-repeat;"></div>
+            <div class="wallpaper" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/wallpaper/5.png') center center / 100% auto no-repeat;"></div>
+            <div class="wallpaper" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/wallpaper/6.png') center center / 100% auto no-repeat;"></div>
+            <div class="wallpaper" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/wallpaper/7.png') center center / 100% auto no-repeat;"></div>
+            <div class="wallpaper" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/wallpaper/8.png') center center / 100% auto no-repeat;"></div>
+            <div class="wallpaper" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/wallpaper/9.png') center center / 100% auto no-repeat;"></div>
+            <div class="wallpaper" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/wallpaper/10.png') center center / 100% auto no-repeat;"></div>
+            <div class="wallpaper" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/wallpaper/11.png') center center / 100% auto no-repeat;"></div>
+            <div class="wallpaper" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/wallpaper/12.png') center center / 100% auto no-repeat;"></div>
+            <div class="wallpaper" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/wallpaper/13.png') center center / 100% auto no-repeat;"></div>
+            <div class="wallpaper" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/wallpaper/14.png') center center / 100% auto no-repeat;"></div>
+            <div class="wallpaper" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/wallpaper/15.jpg') center center / 100% auto no-repeat;"></div>
         </div>
         <hr/>
         <h2>misc.</h2>
         <div id="photos">
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/misc/1.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/misc/2.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/misc/3.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/misc/4.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/misc/5.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/misc/6.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/misc/7.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/misc/8.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/misc/9.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/misc/10.png') center center / 100% auto no-repeat;"></div>
-            <div class="banner" onclick="magnify($(this).attr('style'))"style="background: #000 url('img/misc/11.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/misc/1.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/misc/2.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/misc/3.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/misc/4.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/misc/5.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/misc/6.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/misc/7.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/misc/8.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/misc/9.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/misc/10.png') center center / 100% auto no-repeat;"></div>
+            <div class="banner" onclick="magnify($(this).attr('style'))"
+                 style="background: transparent url('img/misc/11.png') center center / 100% auto no-repeat;"></div>
         </div>
     </section>
 </div>
